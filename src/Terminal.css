@@ -1,0 +1,58 @@
+.terminal-container {
+  position: absolute;
+  top: 70%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%);
+  z-index: 20; /* Ensure terminal is above other content */
+}
+
+
+.terminal {
+  width: 100%; /* Make terminal fill the container */
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.output {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.output-line {
+  margin-bottom: 5px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.input span {
+  color: #4caf50;
+  margin-right: 5px;
+}
+
+.input input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  width: calc(100% - 25px);
+}
+
+.info {
+  color: #FFD700;
+}
+
+.terminal-container .output .default {
+  color: #FFD700; /* Yellow color */
+}
+
+.error {
+  color: #f44336;
+}
