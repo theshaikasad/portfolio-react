@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import MultiLayerParallax from "./MultiLayerParallax";
 import MultiLayerParallax1 from "./MultiLayerParallax1";
