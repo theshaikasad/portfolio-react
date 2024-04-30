@@ -8,7 +8,6 @@ import ButtonWrapper from './ButtonWrapper';
 
 // Import your images
 import leftImage from './rose-left.png';
-import rightImage from './rose.jpg';
 import Example from './Example';
 
 const Header = () => {
@@ -25,38 +24,6 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  );
-};
-
-const ParallaxComponent = ({ imageUrl }) => {
-  const [offsetY, setOffsetY] = useState(0);
-
-  const handleScroll = () => {
-    setOffsetY(window.pageYOffset);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div className="parallax-container">
-      <div
-        className="parallax-bg"
-        style={{
-          backgroundImage: `url(${imageUrl})`,
-          transform: `translateY(-${offsetY * 0.5}px)`,
-          height: "100vh", // Ensure the background image covers the full screen height
-        }}
-      ></div>
-      <div className="parallax-content">
-        <h2 className="text-8xl font-bold text-white">Asad</h2>
-      </div>
-    </div>
   );
 };
 
